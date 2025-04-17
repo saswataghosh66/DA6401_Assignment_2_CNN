@@ -205,3 +205,13 @@ This demonstrates that with extended training, the model was able to generalize 
 After training the ResNet50 model for 30 epochs using the freeze_except_bn_and_fc strategy, I evaluated its performance on the unseen test dataset. The model achieved a test accuracy of 86.25%, indicating strong generalization ability and consistent performance across training, validation, and test sets.
 
 This result confirms that selectively fine-tuning batch normalization and classifier layers is an effective strategy for transfer learning with ResNet50 on this dataset.
+
+**Model Validation on Sampled Test Data:**
+
+To further assess the model’s performance, a random subset of 30 samples was selected from the test dataset. The model's predictions were compared against the actual class labels.
+
+Correct Predictions: 26 out of 30
+
+Accuracy on Sampled Data: 86.67%
+
+This manual check is consistent with the overall test accuracy of 86.25%, reinforcing the model’s reliable performance on unseen data and its ability to generalize well beyond the training and validation sets.
