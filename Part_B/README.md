@@ -119,8 +119,9 @@ We implemented and compared three fine-tuning approaches:
 
 ### Step 7:
 
-
-
+ I selected the freeze_except_bn_and_fc strategy—where only the batch normalization layers and the final classifier layer are kept trainable—as it yielded the 
+ best performance during initial testing.
+ I trained the ResNet50 model using this strategy for 30 epochs
 
 ### Step 8:
 
@@ -187,7 +188,7 @@ In step 6, I fine-tuned a pre-trained ResNet50 model using three different layer
  
 These results highlight that allowing the batch normalization layers to remain trainable (freeze_except_bn_and_fc) resulted in the highest training accuracy, indicating better adaptation to the new dataset.
 
-**Extended Training with Optimal Strategy:**
+### Extended Training with Optimal Strategy:
 
 In Step 7, based on the results from the previous experiments, I selected the freeze_except_bn_and_fc strategy—where only the batch normalization layers and the final classifier layer are kept trainable—as it yielded the best performance during initial testing.
 
@@ -200,13 +201,13 @@ I trained the ResNet50 model using this strategy for 30 epochs, which resulted i
 This demonstrates that with extended training, the model was able to generalize well to unseen data, as evidenced by the high validation accuracy closely matching the training accuracy.
 
 
-**Model Evaluation on Test Set:**
+### Model Evaluation on Test Set:
 
 After training the ResNet50 model for 30 epochs using the freeze_except_bn_and_fc strategy, I evaluated its performance on the unseen test dataset. The model achieved a test accuracy of 86.25%, indicating strong generalization ability and consistent performance across training, validation, and test sets.
 
 This result confirms that selectively fine-tuning batch normalization and classifier layers is an effective strategy for transfer learning with ResNet50 on this dataset.
 
-**Model Validation on Sampled Test Data:**
+### Model Validation on Sampled Test Data:
 
 To further assess the model’s performance, a random subset of 30 samples was selected from the test dataset. The model's predictions were compared against the actual class labels.
 
