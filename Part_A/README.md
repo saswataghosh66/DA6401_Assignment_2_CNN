@@ -177,4 +177,31 @@ Wandb Sweep
 
   # **Result:**
 
-  - 
+**Model Training and Evaluation Summary:**
+
+After conducting approximately 35 hyperparameter sweeps, we identified a model configuration that achieved the highest training accuracy of 30.55% within 10 epochs.
+
+- num_filters=[128,128,64,64,32]
+- kernal_size=[3, 3, 3, 3, 3]
+- activation='mish'
+- num_dense=256
+- dropout=0.3
+- batch_norm=True
+
+Subsequently, we extended the training of this model to 30 epochs, observing the following performance metrics(Step 12 in the notebook):
+
+- Peak validation accuracy: 36.95% (achieved at epoch 30)
+
+- Final test accuracy: 39.64% (after 30 epochs)
+
+In a final evaluation using the trained model at 30 epochs, we achieved an improved test accuracy of 43.15% on our test dataset, demonstrating the model's enhanced generalization capability with extended training.
+
+**Model Validation on Sampled Test Data:**
+
+To further evaluate the model’s performance, we randomly selected 30 samples from the test dataset and compared the actual class labels with the model’s predictions. The results were as follows:
+
+ - Correct predictions: 15/30 (50% accuracy)
+
+ - Incorrect predictions: 15/30
+
+This manual validation aligns with the model’s overall test accuracy (~43.15%), confirming its classification behavior on unseen data.
