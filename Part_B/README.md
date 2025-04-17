@@ -194,9 +194,9 @@ In Step 7, based on the results from the previous experiments, I selected the fr
 
 I trained the ResNet50 model using this strategy for 30 epochs, which resulted in:
 
-  - Training Accuracy: 88%
+  - Training Accuracy: 86.91%
 
-  - Validation Accuracy: 89%
+  - Validation Accuracy: 81.75%
 
 This demonstrates that with extended training, the model was able to generalize well to unseen data, as evidenced by the high validation accuracy closely matching the training accuracy.
 
