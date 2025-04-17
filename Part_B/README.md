@@ -155,7 +155,7 @@ We implemented and compared three fine-tuning approaches:
 - Takes the following parameters:
   - `model`: The trained model to make predictions
   - `dataset`: The dataset containing images and their labels
-  - `device`: The device (CPU or GPU) where the model is loaded
+  - `device`: The device (CPU or GPU) where the model is loade
   - `num_images`: Number of images to display (default is 30)
 - The function:
   - Sets the model to evaluation mode using `model.eval()`
@@ -167,4 +167,20 @@ We implemented and compared three fine-tuning approaches:
     - Converts the image from tensor format to NumPy array for plotting
     - Displays the image along with its predicted and true labels in the grid
   - Tightens the layout and shows the grid of images with predictions
+ 
 
+    
+# **Results:**
+
+ResNet50 Fine-Tuning Strategies and Results
+In step 6, I fine-tuned a pre-trained ResNet50 model using three different layer freezing strategies, each trained for 5 epochs. The strategies and their corresponding training accuracies are as follows:
+
+- freeze_last: All layers of the model were frozen except the final fully connected (fc) layer.
+   - Training Accuracy: 75.58%
+   - Validation Accuracy: 75.50%
+- freeze_k_percent: The first 25% of the model's parameters were frozen, while the remaining 75% were trainable.
+   - Training Accuracy: 64.02%
+   - Validation Accuracy: 59.20%
+- freeze_except_bn_and_fc: All layers were frozen except for the batch normalization layers and the final classifier layer.
+   - Training Accuracy: 82.92%
+   - Validation Accuracy: 80.30%
