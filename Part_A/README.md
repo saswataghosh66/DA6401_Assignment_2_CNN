@@ -3,6 +3,7 @@ The primary objective of this project is to design and train a Convolutional Neu
 
 # **Key Steps to Achieve the Aim:**
 [The code is organized and explained step-by-step in the Jupyter Notebook. Each step is numbered for clarity. In this README file, I have described the implementation by referring to the corresponding step numbers from the notebook. This makes it easier to follow the logic and match the explanation with the actual code.]
+
 **Step 1:**
  - Importing necessary libraries for deep learning, data handling, preprocessing, model training, evaluation, visualization, and experiment tracking.
 
