@@ -1,7 +1,7 @@
 # **Aim**:Building a Convolutional Neural Network (CNN) for Image Classification on the iNaturalist Dataset
 The primary objective of this project is to design and train a Convolutional Neural Network (CNN) to classify images from the [iNaturalist](https://storage.googleapis.com/wandb_datasets/nature_12K.zip) dataset. This dataset consists of images from various biological categories such as animals, plants, and fungi. The CNN will be trained to recognize and classify these species based on their visual features.
 
-# **Key Steps to Achieve the Aim:**
+# **Key Steps to Achieve the Aim:**[The code is organized and explained step-by-step in the Jupyter Notebook. Each step is numbered for clarity. In this README file, I have described the implementation by referring to the corresponding step numbers from the notebook. This makes it easier to follow the logic and match the explanation with the actual code.]
 **Step 1:**
  - Importing necessary libraries for deep learning, data handling, preprocessing, model training, evaluation, visualization, and experiment tracking.
 
