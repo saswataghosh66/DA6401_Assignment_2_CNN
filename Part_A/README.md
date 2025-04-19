@@ -189,6 +189,7 @@ After conducting approximately 35 hyperparameter sweeps, we identified a model c
 - num_dense=256
 - dropout=0.3
 - batch_norm=True
+- learning rate= 0.001
 
 Subsequently, we extended the training of this model to 30 epochs, observing the following performance metrics(Step 12 in the notebook):
 
