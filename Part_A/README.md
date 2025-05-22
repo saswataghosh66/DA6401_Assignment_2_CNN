@@ -201,7 +201,7 @@ In a final evaluation using the trained model at 30 epochs, we achieved an impro
 
 **Model Validation on Sampled Test Data:**
 
-To further evaluate the model’s performance, we randomly selected 30 samples from the test dataset and compared the actual class labels with the model’s predictions. The results were as follows:
+To further evaluate the model’s performance, I randomly selected 30 samples from the test dataset and compared the actual class labels with the model’s predictions. The results were as follows:
 
  - Correct predictions: 15/30 (50% accuracy)
 
